@@ -43,6 +43,8 @@ app.post('/message', (req, res) => {
   res.end();
 });
 
+app.use(require('prerender-node').set('prerenderToken', 'cbvlETyUapGJXEXvQkez'));
+
 server.listen(port, () => {
   console.log(`Listening on http://localhost:${port}/`);
 });
